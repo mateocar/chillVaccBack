@@ -10,7 +10,7 @@ pipeline{
          stage('build container'){
             steps{
                 echo 'estoy en el contenedor del back'
-                bat 'docker run -dp 0.0.0.1:8000:8000 chillvaccback' 
+                bat 'docker run -dp 0.0.0.0:8000:8000 chillvaccback' 
             }
         }
     }
