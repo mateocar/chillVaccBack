@@ -9,6 +9,7 @@ import random
 import pickle
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 with open('contenido.json', encoding='utf-8') as archivo:
     datos = json.load(archivo)
